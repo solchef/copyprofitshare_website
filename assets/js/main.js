@@ -316,7 +316,7 @@ function tg_theme_toggler() {
     // set the first theme scheme
     function tg_init_theme() {
         if (localStorage.getItem('tg_theme_scheme') === 'dark') {
-            tg_set_scheme('dark');
+            tg_set_scheme('light');
             document.querySelector('.modeSwitch').checked = true;
         } else {
             tg_set_scheme('light');
