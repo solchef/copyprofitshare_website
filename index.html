@@ -56,23 +56,43 @@
                             <img src="assets/img/logo/cps-logo.gif">
                             <h2 class="title">COPY PROFIT SHARE</h2>
                             <p class="desc mb-2">$CPS - The token that pays you every 30 mins in every new token.</p>
-                            <a href="https://app.uniswap.org/explore/tokens/ethereum/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a" data-target="#collection" class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Buy</span></a>
-                            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc069db10a178d533e64c554cb618f4792aab8aa7?t=1736936529295" data-target="#collection" class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Price</span></a>
-                            <a href="https://www.team.finance/view-coin/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a?name=copyprofitshare&symbol=CPS&chainid=0x1" data-target="#collection" class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Stake/Earn</span></a>
-                        <div class="col-xl-12 col-lg-12">
-                            <p class="desc mt-4">Smart Contract</p>
-                            <p class="desc m-0 mb-2"><a href="https://etherscan.io/token/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a">0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a</a></p>
-                        </div>
+                            <p>
+                                <button type="button"
+                                    class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"
+                                    data-bs-toggle="modal" data-bs-target="#videoFormModal">
+                                    Play Video
+                                </button>
+                            </p>
 
-                        <div class="col-xl-12 col-lg-12">
-                        <ul class="list-wrap footer__social">
-                            <a href="javascript:void(0)" data-target="#collection" class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Whitepaper</span></a>
-                            <li><a href="mailto:support@copyprofitshare.app"><i class="fas fa-envelope"></i></a></li>
-                            <li><a href="https://t.me/CopyProfitShare"><i class="fab fa-telegram-plane"></i></a></li>
-                            <li><a href="https://x.com/cpstoken"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/cpstoken/"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                        </div>
+                            <a href="https://app.uniswap.org/explore/tokens/ethereum/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a"
+                                data-target="#collection"
+                                class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Buy</span></a>
+                            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xc069db10a178d533e64c554cb618f4792aab8aa7?t=1736936529295"
+                                data-target="#collection"
+                                class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Price</span></a>
+                            <a href="https://www.team.finance/view-coin/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a?name=copyprofitshare&symbol=CPS&chainid=0x1"
+                                data-target="#collection"
+                                class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Stake/Earn</span></a>
+                            <div class="col-xl-12 col-lg-12">
+                                <p class="desc mt-4">Smart Contract</p>
+                                <p class="desc m-0 mb-2"><a
+                                        href="https://etherscan.io/token/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a">0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a</a>
+                                </p>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12">
+                                <ul class="list-wrap footer__social">
+                                    <a href="javascript:void(0)" data-target="#collection"
+                                        class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Whitepaper</span></a>
+                                    <li><a href="mailto:support@copyprofitshare.app"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                    <li><a href="https://t.me/CopyProfitShare"><i class="fab fa-telegram-plane"></i></a>
+                                    </li>
+                                    <li><a href="https://x.com/cpstoken"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/cpstoken/"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,21 +101,61 @@
         <!-- banner-area-end -->
 
 
+        <div class="modal fade" id="videoFormModal" tabindex="-1" aria-labelledby="videoFormModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoFormModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Video Section -->
+                                <div class="ratio ratio-16x9">
+                                    <video id="modalVideo" controls class="w-100">
+                                        <source src="assets/$CPSSTAKING.mov" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                        
+                        </div>
+                    </div>
+              
+                </div>
+            </div>
+        </div>
 
 
 
+        <!-- JS here -->
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+        <script src="assets/js/anime.min.js"></script>
+        <script src="assets/js/anime-helper.js"></script>
+        <script src="assets/js/anime-helper-defined-timelines.js"></script>
+        <script src="assets/js/main.js"></script>
 
-    <!-- JS here -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery.easing.js"></script>
-    <script src="assets/js/anime.min.js"></script>
-    <script src="assets/js/anime-helper.js"></script>
-    <script src="assets/js/anime-helper-defined-timelines.js"></script>
-    <script src="assets/js/main.js"></script>
+        <script>
+            // Get the video element
+            const video = document.getElementById('modalVideo');
+    
+            // Add event listeners for modal open and close
+            const modal = document.getElementById('videoFormModal');
+            modal.addEventListener('show.bs.modal', () => {
+                video.play();
+            });
+    
+            modal.addEventListener('hide.bs.modal', () => {
+                video.pause();
+                video.currentTime = 0; // Reset video to the start
+            });
+        </script>
+    
 </body>
 
 </html>
