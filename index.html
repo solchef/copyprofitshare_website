@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>cps - NFT Portfolio Template</title>
+    <title>cps - Copy Profit Share</title>
     <meta name="description" content="$CPS - The token that pays you every 30 mins in every new token.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -55,7 +55,7 @@
                         <div class="banner__content-two">
                             <img src="assets/img/logo/cps-logo.gif">
                             <h2 class="title">COPY PROFIT SHARE</h2>
-                            <p class="desc mb-2">$CPS - The token that pays you every 30 mins in every new token.</p>
+                            <p class="desc mb-2">$CPS - The token that pays you every minute in every token.</p>
                             <p>
                                 <button type="button"
                                     class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"
@@ -63,7 +63,6 @@
                                     Play Video
                                 </button>
                             </p>
-
                             <a href="https://app.uniswap.org/explore/tokens/ethereum/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a"
                                 data-target="#collection"
                                 class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Buy</span></a>
@@ -75,7 +74,7 @@
                                 class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Stake/Earn</span></a>
                             <div class="col-xl-12 col-lg-12">
                                 <p class="desc mt-4">Smart Contract</p>
-                                <p class="desc m-0 mb-2"><a
+                                <p class="desc m-0 mb-2"><a target="_blank"
                                         href="https://etherscan.io/token/0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a">0x04a1d4b5de122922d3a214cf8510d99cd4be9f3a</a>
                                 </p>
                             </div>
@@ -101,6 +100,11 @@
         <!-- banner-area-end -->
 
 
+
+        <section class="footer-3">
+            <img src="assets/img/tf-token-secured-primary-blue.png">
+        </section>
+
         <div class="modal fade" id="videoFormModal" tabindex="-1" aria-labelledby="videoFormModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -112,20 +116,19 @@
                     <div class="modal-body">
                         <div class="row">
                             <!-- Video Section -->
-                                <div class="ratio ratio-16x9">
-                                    <video id="modalVideo" controls class="w-100">
-                                        <source src="assets/$CPSSTAKING.mov" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                        
+                            <div class="ratio ratio-16x9">
+                                <video id="modalVideo" controls class="w-100">
+                                    <source src="assets/$CPSSTAKING.mov" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
                         </div>
                     </div>
-              
+
                 </div>
             </div>
         </div>
-
 
 
         <!-- JS here -->
@@ -140,22 +143,23 @@
         <script src="assets/js/anime-helper-defined-timelines.js"></script>
         <script src="assets/js/main.js"></script>
 
+
         <script>
             // Get the video element
             const video = document.getElementById('modalVideo');
-    
+
             // Add event listeners for modal open and close
             const modal = document.getElementById('videoFormModal');
             modal.addEventListener('show.bs.modal', () => {
                 video.play();
             });
-    
+
             modal.addEventListener('hide.bs.modal', () => {
                 video.pause();
                 video.currentTime = 0; // Reset video to the start
             });
         </script>
-    
+
 </body>
 
 </html>
