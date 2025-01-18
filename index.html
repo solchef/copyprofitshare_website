@@ -79,11 +79,38 @@
                                 </p>
                             </div>
 
+                            <div class="modal fade" id="videoFormModal" tabindex="-1"
+                                aria-labelledby="videoFormModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="videoFormModalLabel"></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <!-- Video Section -->
+                                                <div class="ratio ratio-16x9">
+                                                    <video id="modalVideo" controls class="w-100">
+                                                        <source src="assets/$CPSSTAKING.mov" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-xl-12 col-lg-12">
                                 <ul class="list-wrap footer__social">
-                                    <a href="javascript:void(0)" data-target="#collection"
-                                        class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Whitepaper</span></a>
-                                    <li><a href="mailto:support@copyprofitshare.app"><i class="fas fa-envelope"></i></a>
+                                    <button data-bs-toggle="modal" data-bs-target="#pdfFormModal"
+                                        class="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"><span>Whitepaper</span></button>
+                                    <li><a href="mailto:support@copyprofitshare.app"><i class="fas fa-envelope"></i>
+                                        </a>
                                     </li>
                                     <li><a href="https://t.me/CopyProfitShare"><i class="fab fa-telegram-plane"></i></a>
                                     </li>
@@ -105,30 +132,51 @@
             <img src="assets/img/tf-token-secured-primary-blue.png">
         </section>
 
-        <div class="modal fade" id="videoFormModal" tabindex="-1" aria-labelledby="videoFormModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="videoFormModalLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <!-- Video Section -->
-                            <div class="ratio ratio-16x9">
-                                <video id="modalVideo" controls class="w-100">
-                                    <source src="assets/$CPSSTAKING.mov" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
 
-                        </div>
+       <!-- Update the modal IDs for uniqueness -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Video Section -->
+                    <div class="ratio ratio-16x9">
+                        <video id="modalVideo" controls class="w-100">
+                            <source src="assets/$CPSSTAKING.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- PDF Modal with scrollable content -->
+<div class="modal fade" id="pdfFormModal" tabindex="-1" aria-labelledby="pdfFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pdfFormModalLabel">Whitepaper</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="max-height: 500px; overflow-y: auto;">
+                <div class="row">
+                    <!-- PDF Image Section -->
+                    <img src="assets/page1.jpg" class="img-fluid" />
+                    <img src="assets/page2.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
         <!-- JS here -->
